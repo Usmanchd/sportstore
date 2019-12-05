@@ -1,0 +1,12 @@
+.main {
+  border-left: .9px solid rgba(201, 201, 201, 0.842);
+}
+.mycard {
+  transform: scale(0.94);
+  -webkit-box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.73);
+  box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.mycard:hover {
+  transform: scale(1);
+}
