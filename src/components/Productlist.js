@@ -27,9 +27,11 @@ export default function Productlist() {
 
   const add = product => {
     const index = cart.findIndex(c => c.id === product.id);
+
     if (index === -1) {
       let newproduct = { ...product, count: 1 };
       dispatch({ type: 'ADD', payload: newproduct });
+      console.log(newproduct);
     } else {
       let newproduct = { ...product, count: cart[index].count + 1 };
       dispatch({ type: 'Increment Count', payload: newproduct });
@@ -64,7 +66,7 @@ export default function Productlist() {
                     className="badge badge-pill badge-primary"
                     style={{ marginLeft: '20px', fontSize: '1rem' }}
                   >
-                    ${p.price.toFixed(2)}
+                    ₨{p.price.toFixed(2)}
                   </span>
                 </div>
               </div>
