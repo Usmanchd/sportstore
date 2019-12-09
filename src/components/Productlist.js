@@ -47,7 +47,7 @@ export default function Productlist() {
               <div className="card mycard">
                 <img
                   className="card-img-top"
-                  src={`/${p.image}`}
+                  src={`./${p.image}`}
                   alt={p.name}
                   style={{ width: '257px' }}
                 />

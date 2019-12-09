@@ -5,11 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dataprovider } from './store/store';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter } from 'react-router-dom';
 ReactDOM.render(
   <Dataprovider>
     <Router>
-      <App />
+      <HashRouter basename="/">
+        <App />
+      </HashRouter>
     </Router>
   </Dataprovider>,
   document.getElementById('root')
